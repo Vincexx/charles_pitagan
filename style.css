@@ -102,5 +102,10 @@ footer .fa {
         margin-top: 1em;
     }
 }
+@media (max-width: 600px) {
+    #about {
+        margin-top: 2em;
+    }
+}
 
 
