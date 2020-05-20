@@ -87,6 +87,9 @@ footer .fa {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
     .showcase {
         text-align: center;
     }
