@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 p {
@@ -57,28 +57,46 @@ img {
 ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     padding: 0;
 }
 li {
     padding: 0 1em 0 1em;
 }
 
-.h1 {
-    animation: fade;
-    animation-duration: .2s;
-}
-
 #showcase { 
     animation: bounce;
     animation-duration: 4s;
-    height: 100vh;
+    height: 80vh;
 }
 
 #about {
     scroll-behavior: [ auto smooth];
 }
 
+footer {
+    background: rgba(35, 185, 223, 0.9);
+    padding: 30px;
+    color: black;
+    font-size: 1rem;
+}
 
+footer .fa {
+    color: black;
+    
+}
+
+@media (max-width: 768px) {
+    .showcase {
+        text-align: center;
+    }
+    ul {
+        justify-content: center;
+    }
+    #about p {
+        text-align: center;
+        margin-top: 1em;
+    }
+}
 
 
