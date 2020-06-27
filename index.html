@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Pitagan - Portfolio</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b28ccfe67f.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="row m-3" id="branding">
-        <div class="col text-center mt-3">
-            <i class="fa fa-code fa-4x logo" aria-hidden="true"></i>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <div class="container">
+            <img src="img/logo.png" alt="asd" style="width: 100px;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" type="button" href="#showcase">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Project</a>
+                </li>
+            </ul>
         </div>
-    </div>
+        </div>
+    </nav>
     <div class="container" id="showcase">
-        <div class="row mt-5 showcase">
+        <div class="row showcase" style="margin-top: 8em;">
             <div class="col-md-6 name" style="margin-top: 80px;">
                 <h3>Hello, </h3>
                 <h1>I'm <span class="highlight">Charles Pitagan</span></h1>
@@ -50,7 +71,7 @@
             </div>
             <div class="col-md-6 mx-auto">
                 <p>
-                    <p style="font-size: 1.125rem; font-style: italic; line-height: 1.5em;">I have one year experience as an IT Instructor and Volunteer Web Developer at the same time. I am very passionate when it comes to web development, I've done multiple courses with Laravel and Vuejs which is listed below.</p>
+                    <p style="font-size: 1.125rem; line-height: 1.5em;">I have one year experience as an IT Instructor and Volunteer Web Developer at the same time. I am very passionate when it comes to web development, I've done multiple courses with Laravel and Vuejs which is listed below.</p>
                     <ul class="list-group">
                         <li class="list-group-item">
                             <i class="fa fa-check" aria-hidden="true">
@@ -80,9 +101,9 @@
                 <h3 class="highlight">Web Development Skills</h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md-6">
-                <div class="card mt-3">
+                <div class="card mt-3 skill">
                     <div class="card-title text-center p-3">
                         <h4>Front-end</h4>
                     </div>
@@ -98,7 +119,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card mt-3">
+                <div class="card mt-3 skill">
                     <div class="card-title text-center p-3">
                         <h4>Back-end</h4>
                     </div>
@@ -114,36 +135,27 @@
         </div>
     </div>
     <hr>
-    <div class="container">
+    <div class="container" id="projects">
         <div class="row">
             <div class="col m-3 text-center">
                 <h3 class="highlight">Projects</h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md-6 text-center">
                 <p class="text-center" style="font-weight: bold;">CSG Voting System</p>
-                <img src="img/voting.png" alt="">
+                <img src="img/voting.png" alt="" height="86%">
             </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <p>I created this voting system for the CSG election of the University. I made it for free, just to enhance my skills in web development.</p>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6 text-center mt-3">
-                <p class="text-center mb-3" style="font-weight: bold;">Dynamic Blog Post (Content Management System)</p>
+            <div class="col-md-6 cms">
+                <p class="text-center" style="font-weight: bold;">Blog (CMS)</p>
                 <video autoplay>
                     <source src="bandicam 2020-06-04 14-16-01-749.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque, ratione, distinctio atque omnis rerum, tempora minus error reprehenderit a modi quam quis sint et numquam aspernatur exercitationem obcaecati quo!</p>
-            </div>
         </div>
     </div>
-    <hr>
+    
     <footer>
         <div class="text-center">
             <p>
@@ -154,12 +166,16 @@
         </div>
     </footer>
 
-    <script>
-        $('#scroll-to').scroll(function () {
-                alert('you have scrolled to the h1!');
-        });
-    </script>
 
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
