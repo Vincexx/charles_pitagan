@@ -82,7 +82,7 @@ li:hover {
 #about {
     background: rgb(0, 0, 0,0.9);
     color: white;
-    padding: 4em;
+    padding: 3em;
 }
 
 .about img {
@@ -92,7 +92,6 @@ li:hover {
 .about p {
     font-size: 1.5rem;
 }
-
 
 
 .about {
@@ -115,7 +114,8 @@ li:hover {
 #skills {
     background: rgba(1, 27, 13, 0.9);
     color: white;
-    padding: 4em;
+    padding: 3em;
+
 }
 
 .skills {
@@ -140,7 +140,7 @@ li:hover {
 #projects {
     background: rgb(0, 0, 0, 0.9);
     color: white;
-    padding: 2em;
+    padding: 3em;
 }
 
 .projects {
@@ -152,7 +152,7 @@ li:hover {
 #contacts {
     background: rgba(1, 27, 13, 0.9);
     color: white;
-    padding: 5em;
+    padding: 3em;
 }
 
 .contacts {
@@ -201,11 +201,12 @@ footer {
         margin-bottom: 5px;
     }
 
+   
+
     
     .about {
         display: grid;
         grid-template-columns: 1fr;
-        text-align: center;
         grid-gap: 1em;
     }
 
@@ -260,27 +261,16 @@ footer {
         width: 120px;
     }
 
-    #about h3 {
-        margin-bottom: 2em;
-        font-size: 1.125rem;
+    #about, #skills, #projects, #contacts{
+        padding: 5px;
     }
 
-    #skills h3 {
-        margin-bottom: 2em;
-        font-size: 1.125rem;
-    }
+   .contact-text p {
+       font-size: 0.8rem;
+   }
 
-    #projects h3 {
-        margin-bottom: 2em;
-        font-size: 1.125rem;
-    }
-   
-    #contacts h3 {
-        margin-bottom: 2em;
-        font-size: 1.125rem;
-    }
+   footer p {
+       font-size: 1rem;
+   }
 
-    footer p {
-        font-size: 1rem;
-    }
 }
