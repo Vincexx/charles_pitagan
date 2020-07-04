@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +24,7 @@
         <div class="overlay">
             <section id="header">
                 <div class="container">
-                    <nav class="navbar navbar-expand-sm">
+                    <nav class="navbar navbar-expand-sm fixed-top container" role="navigation">
                         <a class="navbar-brand" href="#">
                             <img src="img/apple-touch-icon.png" alt="" style="width: 50px;">
                         </a>
@@ -36,18 +39,20 @@
                             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         
                                 <li class="nav-item mr-5 current">
-                                    <a class="nav-link text-white" type="button" id="btnHome">Home <span
-                                            class="sr-only">(current)</span></a>
+                                    <a class="nav-link text-white" href="#header" id="btnHome" >Home</a>
                                 </li>
         
                                 <li class="nav-item mr-5">
-                                    <a class="nav-link text-white" type="button" id="btnAbout">About </a>
+                                    <a class="nav-link text-white" href="#about" id="btnAbout">About </a>
                                 </li>
         
+                                <li class="nav-item mr-5">
+                                    <a class="nav-link text-white" href="#projects" id="btnProjects">Projects </a>
+                                </li>
+                                
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" type="button" id="btnProjects">Projects </a>
+                                    <a class="nav-link text-white" href="#contacts" id="btnContacts">Contacts </a>
                                 </li>
-        
                             </ul>
                         </div>
                     </nav>
@@ -57,7 +62,7 @@
             <section id="showcase" data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-duration="2000">
                 <div class="container">
                     <div class="showcase text-white">
-                        <div class="mb-4">
+                        <div class="">
                             <h1>Charles <span class="highlight"  >Pitagan</span></h1>
                             <p>Full Stack Web Developer</p>
                         </div>
@@ -212,7 +217,8 @@
             </p>
         </div>
     </footer>
-        
+
+    
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -228,10 +234,67 @@
     <script>
         AOS.init();
     </script>
-
   
-    <script async type="text/javascript"
-        src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/a73a5ff1b34afffa3f9f1ee5f969bcc051cae05124c447c01c3cb6d672b66b7d.js"></script>
+    <script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/ed087498f01a481da2d67f73939be512d4d914f3d35c5badda6691a16697be95.js"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <script>
+
+        $('#btnHome').click(() => {
+
+            $('.nav-item:nth-child(1)').addClass('current')
+
+            $('.nav-item:nth-child(2)').removeClass('current')
+            $('.nav-item:nth-child(3)').removeClass('current')
+            $('.nav-item:nth-child(4)').removeClass('current')
+
+        });
+        
+        $('#btnAbout').click(() => {
+
+            $('.nav-item:nth-child(2)').addClass('current')
+
+            $('.nav-item:nth-child(1)').removeClass('current')
+            $('.nav-item:nth-child(3)').removeClass('current')
+            $('.nav-item:nth-child(4)').removeClass('current')
+
+        });
+
+        $('#btnProjects').click(() => {
+
+            $('.nav-item:nth-child(3)').addClass('current')
+
+            $('.nav-item:nth-child(1)').removeClass('current')
+            $('.nav-item:nth-child(2)').removeClass('current')
+            $('.nav-item:nth-child(4)').removeClass('current')
+
+        });
+
+         $('#btnContacts').click(() => {
+
+            $('.nav-item:nth-child(4)').addClass('current')
+
+            $('.nav-item:nth-child(1)').removeClass('current')
+            $('.nav-item:nth-child(2)').removeClass('current')
+            $('.nav-item:nth-child(3)').removeClass('current')
+
+        });
+
+         $(window).scroll(() => {
+
+            console.log('HEllo');
+
+        });
+
+
+    </script>
+    
+   
 </body>
 </html>
