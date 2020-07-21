@@ -82,7 +82,7 @@
 
     <section id="about">
         <div class="container">
-            <h3 class="text-center m-5 title" style="font-family: 'Lobster', cursive; color: rgb(29, 247, 29);">ABOUT ME</h3>
+            <h3 class="text-center m-5 title" style="font-size: 2rem; font-weight: 300; color: rgb(29, 247, 29);">ABOUT ME</h3>
              <div class="about">
                 <div class="col1" data-aos="fade-right" data-aos-duration="2000">
                     <img src="img/Capture.png" alt="">
@@ -113,7 +113,8 @@
 
     <section id="skills">
         <div class="container">
-            <h3 class="text-center mt-5 title" style="font-family: 'Lobster', cursive; color: rgb(29, 247, 29);">SKILLS</h3>
+            <h3 class="text-center mt-5 title" style="font-size: 2rem; font-weight: 300; color: rgb(29, 247, 29);">
+                SKILLS</h3>
             <div class="skills text-center mb-5">
                 
                 <img src="img/logo_html.png" alt="" data-aos="flip-left" data-aos-duration="2000">
@@ -135,7 +136,8 @@
 
     <section id="projects">
         <div class="container">
-            <h3 class="text-center mt-5 title" style="font-family: 'Lobster', cursive; color: rgb(29, 247, 29);">PROJECTS</h3>
+            <h3 class="text-center mt-5 title" style="font-size: 2rem; font-weight: 300; color: rgb(29, 247, 29);">
+                PROJECTS</h3>
             <div class="projects row text-center mb-5">
 
                 <div class="col-md-6" data-aos="zoom-in" data-aos-duration="2000">
@@ -154,36 +156,9 @@
 
     <section id="contacts">
         <div class="container">
-            <h3 class="text-center mt-5 title" style="font-family: 'Lobster', cursive; color: rgb(29, 247, 29);">CONTACTS</h3>
+            <h3 class="text-center mt-5 title" style="font-size: 2rem; font-weight: 300; color: rgb(29, 247, 29);">
+                CONTACTS</h3>
             <div class="contacts mb-5">
-    
-                <div class="contact-text" data-aos="fade-down" data-aos-duration="2000">
-                    <p>
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                         Bunga, Tanza, Cavite
-                    </p>
-                    <p>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        09756348605
-                    </p>
-                    <p>
-                        <i class="fa fa-google" aria-hidden="true"></i>
-                        cvpitagan@gmail.com
-                    </p>
-                    <p>
-                        <a href="https://www.facebook.com/quarts14/" class="text-white"><i class="fa fa-facebook" aria-hidden="true"></i>
-                        https://www.facebook.com/quarts14/</a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/Vincexx" class="text-white"><i class="fa fa-linkedin" aria-hidden="true"></i>
-                        https://github.com/Vincexx</a>
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/charles-pitagan-28818a190/" class="text-white"><i class="fa fa-github" aria-hidden="true"></i>
-                        https://www.linkedin.com/in/charles-pitagan-28818a190/</a>
-                    </p>
-                </div>
-
                 <div data-aos="fade-up" data-aos-duration="2000">
 
                     <div class="form-group">
@@ -211,11 +186,42 @@
     </section>
 
     <footer>
-        <div class="container">
-            <p class="text-center">
+        <div class="container footer">
+            <ul>
+                <p>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Bunga, Tanza, Cavite
+                </p>
+                <p>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    09756348605
+                </p>
+                <p>
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    cvpitagan@gmail.com
+                </p>   
+                <p>
+                    <a href="https://www.facebook.com/quarts14/" class="text-white">
+                        <i class="fa fa-facebook"aria-hidden="true"></i>
+                        facebook.com/quarts14/
+                    </a>
+                </p>
+                <p>
+                    <a href="https://github.com/Vincexx" class="text-white"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i>
+                        github.com/Vincexx</a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/charles-pitagan-28818a190/" class="text-white"><i
+                            class="fa fa-github" aria-hidden="true"></i>
+                        linkedin.com/in/charles-pitagan-28818a190/</a>
+                </p>
+            </ul>
+            <p class="mt-5">
                 Charles Pitagan &copy; 2020
             </p>
         </div>
+
     </footer>
 
     
@@ -231,6 +237,7 @@
         crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
         AOS.init();
     </script>
@@ -246,45 +253,6 @@
 
     <script>
 
-        $('#btnHome').click(() => {
-
-            $('.nav-item:nth-child(1)').addClass('current')
-
-            $('.nav-item:nth-child(2)').removeClass('current')
-            $('.nav-item:nth-child(3)').removeClass('current')
-            $('.nav-item:nth-child(4)').removeClass('current')
-
-        });
-        
-        $('#btnAbout').click(() => {
-
-            $('.nav-item:nth-child(2)').addClass('current')
-
-            $('.nav-item:nth-child(1)').removeClass('current')
-            $('.nav-item:nth-child(3)').removeClass('current')
-            $('.nav-item:nth-child(4)').removeClass('current')
-
-        });
-
-        $('#btnProjects').click(() => {
-
-            $('.nav-item:nth-child(3)').addClass('current')
-
-            $('.nav-item:nth-child(1)').removeClass('current')
-            $('.nav-item:nth-child(2)').removeClass('current')
-            $('.nav-item:nth-child(4)').removeClass('current')
-
-        });
-
-         $('#btnContacts').click(() => {
-
-            $('.nav-item:nth-child(4)').addClass('current')
-
-            $('.nav-item:nth-child(1)').removeClass('current')
-            $('.nav-item:nth-child(2)').removeClass('current')
-            $('.nav-item:nth-child(3)').removeClass('current')
-
-        });
 
          $(window).scroll(() => {
 
