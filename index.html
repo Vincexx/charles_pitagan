@@ -8,15 +8,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <script src="https://kit.fontawesome.com/b28ccfe67f.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
 <body>
     
@@ -24,7 +24,7 @@
         <div class="overlay">
             <section id="header">
                 <div class="container">
-                    <nav class="navbar navbar-expand-sm fixed-top container" role="navigation">
+                    <nav class="navbar navbar-expand-md fixed-top container" role="navigation">
                         <a class="navbar-brand" href="#">
                             <img src="img/apple-touch-icon.png" alt="" style="width: 50px;">
                         </a>
@@ -81,14 +81,14 @@
     </header>
 
     <section id="about">
-        <div class="container">
-            <h3 class="text-center m-5 title" style="font-size: 2rem; font-weight: 300; color: rgb(29, 247, 29);">ABOUT ME</h3>
+        <div class="container about-container">
+            <h3 class="text-center sub-title">ABOUT ME</h3>
              <div class="about">
-                <div class="col1" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col1 profile_pic" data-aos="fade-right" data-aos-duration="2000">
                     <img src="img/Capture.png" alt="">
                 </div>
                 
-                <div class="col2" data-aos="fade-left" data-aos-duration="2000">
+                <div class="col2 about_me" data-aos="fade-left" data-aos-duration="2000">
                     
                      <p class="" style="line-height: 1.5em; letter-spacing: 2px;" >
                         I am a graduate of Cavite State University - CCAT Campus with a degree in BS in Computer Science. In year 2019-2020, I had my experience as an IT Instructor and a Volunteer Web Developer in a State University.
@@ -98,7 +98,7 @@
                         I have the skills and ability to create dynamic and user-friendly websites. Also, I reassured that I will meet my client's/boss' expectations.
                     </p>
 
-                    <div class="mt-5 mb-5">
+                    <div class="mt-5">
                         <strong>
                             <p style="color: rgb(29, 247, 29);">Certifications :</p>
                         </strong>
@@ -113,30 +113,32 @@
 
     <section id="skills">
         <div class="container">
-            <h3 class="text-center mt-5 title" style="font-size: 2rem; font-weight: 300; color: rgb(29, 247, 29);">
+            <h3 class="text-center mt-5 sub-title" >
                 SKILLS</h3>
             <div class="skills text-center mb-5">
                 
-                <img src="img/logo_html.png" alt="" data-aos="flip-left" data-aos-duration="2000">
-                <img src="img/logo_css.png" alt="" data-aos="flip-left" data-aos-duration="2000">
+                <img src="img/logo_html.png" alt="" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="200">
+                <img src="img/logo_css.png" alt="" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="300">
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTY2anINYJoeteqMt-Qzrke0eCiyPSGhEQaGw&usqp=CAU" data-aos="flip-left" data-aos-duration="2000" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTY2anINYJoeteqMt-Qzrke0eCiyPSGhEQaGw&usqp=CAU" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="400" alt="">
 
                 <img src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/elements/bootstrap-stack.png"
-                    alt="" data-aos="flip-left" data-aos-duration="2000">
+                    alt="" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="500">
+                
+                <img src="https://www.php.net/images/logos/php-logo.svg" alt="" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="600">
+                <img src="https://laravel.com/img/logomark.min.svg" alt="" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="700">
+                <img src="https://vuejs.org/images/logo.png" alt="" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="800">
+                <img src="img/mysql2.png" alt="" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="900">
+                <img src="img/git.png" alt="" data-aos="fade-up" data-aos-duration="6000" data-aos-delay="1000">
 
-                <img src="https://www.php.net/images/logos/php-logo.svg" alt="" data-aos="flip-left" data-aos-duration="2000">
-                <img src="https://laravel.com/img/logomark.min.svg" alt="" data-aos="flip-left" data-aos-duration="2000">
-                <img src="https://vuejs.org/images/logo.png" alt="" data-aos="flip-left" data-aos-duration="2000">
-                <img src="img/mysql2.png" alt="" data-aos="flip-left" data-aos-duration="2000">
-                <img src="img/git.png" alt="" data-aos="flip-left" data-aos-duration="2000">
+                
             </div>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h3 class="text-center mt-5 title" style="font-size: 2rem; font-weight: 300; color: rgb(29, 247, 29);">
+            <h3 class="text-center mt-5 sub-title">
                 PROJECTS</h3>
             <div class="projects row text-center mb-5">
 
@@ -156,13 +158,13 @@
 
     <section id="contacts">
         <div class="container">
-            <h3 class="text-center mt-5 title" style="font-size: 2rem; font-weight: 300; color: rgb(29, 247, 29);">
+            <h3 class="text-center mt-5 sub-title" >
                 CONTACTS</h3>
-            <div class="contacts mb-5 row contact-text">
+            <div class="contacts mb-5 row contact-text" data-aos="fade-down" data-aos-duration="2000" class="col-md-6">
                 <div class="col-md-6">
                     <p>
                         <i class="fa fa-home" aria-hidden="true"></i>
-                        Bunga, Tanza, Cavite
+                        Bunga, Tanza, Cavite    
                     </p>
                     <p>
                         <i class="fa fa-phone" aria-hidden="true"></i>
