@@ -1,11 +1,17 @@
 
 @media (max-width: 411px) {
+
     .showcase {
-        width: 100%;
+        text-align: center;
     }
 
-    .showcase h1 {
-        font-size: 3.5rem;
+    #showcase h1 {
+        font-size: 2.7rem;
+    }
+
+    .sub-title {
+        font-size: 1.5rem;
+        font-family: sans-serif;
     }
 
     .skills {
@@ -13,6 +19,7 @@
         grid-gap: 10px;
         grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
     }
+
 
 }
 
@@ -36,10 +43,8 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 768px) {
-    
     #showcase {
         width: 100%;
-
     }
     .about {
         display: grid;

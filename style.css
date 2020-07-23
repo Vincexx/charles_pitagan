@@ -94,7 +94,7 @@ p {
 #about {
     background: rgb(0, 0, 0,0.9);
     color: rgb(255, 255, 255, 0.8);
-    padding: 3em;
+    padding: 3em 0;
 }
 
 .about img {
@@ -114,9 +114,9 @@ p {
     
 }
 
-.about-container {
+/* .about-container {
     padding: 60px 0;
-}
+} */
 
 .col1 {
     display: flex;
@@ -130,7 +130,7 @@ p {
 #skills {
     background: rgba(1, 27, 13, 0.9);
     color: rgb(255, 255, 255, 0.8);
-    padding: 3em;
+    padding: 3em 0;
 
 }
 
@@ -157,7 +157,7 @@ p {
 #projects {
     background: rgb(0, 0, 0, 0.9);
     color: rgb(255, 255, 255, 0.8);
-    padding: 3em;
+    padding: 3em 0;
 }
 
 .projects {
@@ -169,7 +169,7 @@ p {
 #contacts {
     background: rgba(1, 27, 13, 0.9);
     color: rgb(255, 255, 255, 0.8);
-    padding: 3em;
+    padding: 3em 0;
 }
 
 .contacts {
